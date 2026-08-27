@@ -26,7 +26,7 @@ Contractor-style accounts were included on purpose to have a non-standard accoun
 Confirmed all 25 users appear in the Entra Users blade with correct department and job title fields populated. Spot-checked a few of the bulk-imported accounts to confirm the CSV fields mapped correctly (name, department, title) and that Account enabled was set as expected.
 
 ## Result
-Working — 25 users live in the tenant, correctly split across 5 departments with title variety. At this stage, no security groups, dynamic groups, or external/guest users existed yet — that work was intentionally sequenced after user provisioning, still within Phase 0. See `03-groups-and-guest-access.md` for that work, completed before moving into Phase 1.
+Appears to be working. 25 users live in the tenant, correctly split across 5 departments with title variety. At this stage, no security groups, dynamic groups, or external/guest users existed yet. That work was intentionally sequenced after user provisioning, still within Phase 0. See `03-groups-and-guest-access.md` for that work, completed before moving into Phase 1.
 
 ## Screenshots
 ![Entra Users blade showing all 25 users with department and title columns](../Screenshots/01-users-full-roster.png)
