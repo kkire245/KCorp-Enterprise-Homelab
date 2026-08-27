@@ -29,5 +29,4 @@ With this, **Phase 0 is fully complete**: tenant live and populated, hypervisor 
 ![Groups blade showing all 6 groups](../Screenshots/01-groups-list.png)
 ![Dynamic group Members tab showing auto-populated managers](../Screenshots/01-dynamic-group-members.png)
 
-## Interview-Ready Summary
-"I used a job-title-based dynamic group rule instead of a department-based one, since a cross-department 'all managers' group is a more realistic building block for access approval workflows than something that just duplicates my existing department groups."
+
