@@ -32,5 +32,3 @@ Working — 25 users live in the tenant, correctly split across 5 departments wi
 ![Entra Users blade showing all 25 users with department and title columns](../Screenshots/01-users-full-roster.png)
 ![Bulk Create CSV template and columns used for import](../Screenshots/01-bulk-create-csv-template.png)
 
-## Interview-Ready Summary
-"I provisioned users both manually and via bulk CSV import to get reps on both patterns, and deliberately varied job titles within departments so I'd have real data to build dynamic group rules against later."
