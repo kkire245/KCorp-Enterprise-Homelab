@@ -30,5 +30,3 @@ Separately, ran into a related snag when trying to log into admin.microsoft.com 
 ![M365 Developer Program eligibility error](../Screenshots/01-mdp-eligibility-error.png)
 ![Entra tenant Overview showing KCorp name, domain, and P2 license](../Screenshots/01-tenant-overview-kcorp.png)
 
-## Interview-Ready Summary
-"When my first-choice route to a licensed dev tenant hit an undocumented eligibility gate, I pivoted to an Azure free account and manually upgraded the licensing myself, rather than getting stuck waiting on a workaround."
