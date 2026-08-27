@@ -21,7 +21,7 @@ The guest invite is a small step now but sets up future work, external users are
 Confirmed each assigned group shows the correct department members. For the dynamic group, waited for membership processing to complete and confirmed it auto-populated with the expected manager-titled users across multiple departments, not just one.
 
 ## Result
-Working. 6 groups total (5 assigned + 1 dynamic), the dynamic group correctly picked up managers across departments without manual assignment. Guest invite sent, sitting in pending status.
+Working. 6 groups total (5 assigned + 1 dynamic), the dynamic group correctly picked up managers across departments without manual assignment. Guest invite sent and was accepted.
 
 With this, **Phase 0 is fully complete**: tenant live and populated, hypervisor installed, Windows Server 2025 eval ISO downloaded, groups (including dynamic) created, guest user invited.
 
