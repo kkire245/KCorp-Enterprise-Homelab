@@ -1,6 +1,6 @@
 # User Provisioning — 25 KCorp Employees
 
-**Date:** Late August 2026 (retroactive entry — written after the fact)
+**Date:** Late August 2026 (retroactive entry, written after the fact)
 **Phase:** Phase 0 — Accounts & Environment Setup
 **Category:** Entra ID
 
