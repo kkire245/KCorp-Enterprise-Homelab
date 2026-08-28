@@ -44,4 +44,4 @@ The most valuable outcome of this step wasn't the GPOs applying cleanly. It was 
 
 ## Screenshots
 ![Client System Properties showing successful domain join to kcorp.local](../Screenshots/02-client-domain-joined.png)
-![Elevated gpresult /r /scope:computer output showing Computer and User settings applied, including group membership](../Screenshots/gpresult-output.png)
+![Elevated gpresult /r /scope:computer output showing Computer and User settings applied, including group membership](../Screenshots/02-gpresult-output.png)
