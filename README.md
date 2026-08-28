@@ -1,4 +1,4 @@
-# KCorp Enterprise IAM Lab
+# KCorp Enterprise Homelab
 
 A self-built enterprise identity environment simulating a mid-sized company (KCorp), used to develop hands-on skills in Active Directory administration, hybrid identity, and Microsoft Entra ID / IAM.
 
