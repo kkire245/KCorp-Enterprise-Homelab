@@ -11,7 +11,7 @@ Create a small set of GPOs against the OU structure, join a client VM to `kcorp.
 - Created three GPOs and linked them to OUs in the domain:
   - **KCorp-Password-Policy** (Computer Configuration → Account Policies → Password Policy, minimum length set) — linked to `KCorp-Computers`
   - **KCorp-Desktop-Restriction** (User Configuration → Administrative Templates → Desktop, Recycle Bin icon removed) — linked to `KCorp-Users`
-  - **KCorp-Mapped-Drive** (User Configuration → Preferences → Drive Maps, a mapped network drive) — linked to `KCorp-Users`
+  - **KCorp-Mapped-Drive** (User Configuration → Preferences → Drive Maps, a mapped network drive) linked to `KCorp-Users`
 - Built a second VM, **KCorp-Client01**, running Windows 11 Pro, connected to the same Hyper-V Default Switch as the DC.
 - Manually set the client's DNS server to the DC's IP address (rather than leaving it on automatic/public DNS), which is required for the client to resolve `kcorp.local` and locate the domain controller at all.
 - Joined the client to the `kcorp.local` domain using `KCORP\Administrator` credentials — confirmed with a successful "Welcome to the kcorp.local domain" message.
