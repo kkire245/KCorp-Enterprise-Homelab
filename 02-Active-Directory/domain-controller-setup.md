@@ -21,7 +21,7 @@ Chose **Add a new forest** rather than joining an existing domain/forest, since 
 
 Renamed the computer *before* promotion specifically to avoid a more complicated post-promotion rename later (renaming a live DC affects DNS records and SPNs, so it's meaningfully more work after the fact than before).
 
-Installed only the AD DS role rather than also adding AD CS (certificate services) or AD FS (federation services) — those solve different problems (internal PKI, external federation/SSO) that aren't relevant to standing up a basic domain, and adding them now would just be unused complexity for this stage of the lab.
+Installed only the AD DS role rather than also adding AD CS (certificate services) or AD FS (federation services). These solve different problems (internal PKI, external federation/SSO) that aren't relevant to standing up a basic domain, and adding them now would just be unused complexity for this stage of the lab.
 
 Left DNS Server and Global Catalog checked at their defaults since both are standard requirements for a functioning single-DC domain. DNS is required for AD to operate at all, and Global Catalog is needed since this is currently the only DC in the forest.
 
