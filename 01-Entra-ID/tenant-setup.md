@@ -1,7 +1,7 @@
 # Tenant Setup — KCorp Entra ID Environment
 
 **Date:** Late August 2026 (retroactive entry, written after the fact)
-**Phase:** Phase 0 — Accounts & Environment Setup
+**Stage:** Stage 1 - Entra ID Setup
 **Category:** Entra ID
 
 ## Goal
