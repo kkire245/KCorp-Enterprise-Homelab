@@ -1,11 +1,11 @@
 # Group Policy & Client Domain Join — KCorp
 
 **Date:** Late August 2026
-**Phase:** Phase 1 — On-Prem AD Foundation
+**Stage:** Stage 2 - Active Directory
 **Category:** Active Directory
 
 ## Goal
-Create a small set of GPOs against the OU structure, join a client VM to `kcorp.local`, and verify that policy actually applies to a real domain-joined machine and user.
+Create a small set of GPOs against the OU structure, join a client VM to `kcorp.local`, and verify that the policy actually applies to a real domain-joined machine and user.
 
 ## What I Configured
 - Created three GPOs and linked them to OUs in the domain:
@@ -23,7 +23,7 @@ I split the three GPOs across Computer Configuration (password policy) and User 
 I set DNS manually to the DC rather than leaving it on automatic, since a domain-joined client depends on AD-integrated DNS to locate the domain controller (SRV records, etc.). Public DNS servers have no knowledge of `kcorp.local` and domain join would fail without this.
 
 ## How I Tested It — and What Went Wrong Along the Way
-Initial testing showed only User Configuration GPOs (Desktop-Restriction, Mapped-Drive) applying — Password-Policy was missing entirely from `gpresult /r` output, even though it appeared correctly linked and enabled.
+Initial testing showed only User Configuration GPOs (Desktop-Restriction, Mapped-Drive). Applying Password-Policy was missing entirely from `gpresult /r` output, even though it appeared correctly linked and enabled.
 
 **Root cause #1 — default container placement:** When a machine is joined to a domain, its computer object lands in the built-in **Computers** container by default, not in any custom OU, even though `KCorp-Computers` already existed. Since no GPOs were linked to the default Computers container, Computer Configuration settings (like the password policy) had nowhere to apply from. I fixed it by manually moving `KCORP-CLIENT01` into the `KCorp-Computers` OU and linking `KCorp-Password-Policy` there directly.
 
@@ -38,7 +38,7 @@ All three GPOs confirmed applying correctly:
 - **Computer Settings:** KCorp-Password-Policy, Default Domain Policy
 - **User Settings:** KCorp-Desktop-Restriction, KCorp-Mapped-Drive
 
-Domain join, DNS resolution, OU-scoped policy application, and group nesting (KCorp-AD-IT-Staff nested in KCorp-AD-All-Managers) all verified working end-to-end on a real domain-joined client and user. This completes Phase 1: working domain, OUs, users, groups, GPOs, and a domain-joined client with confirmed policy application.
+Domain join, DNS resolution, OU-scoped policy application, and group nesting (KCorp-AD-IT-Staff nested in KCorp-AD-All-Managers) all verified working end-to-end on a real domain-joined client and user. This completes the Active Directory Stage: working domain, OUs, users, groups, GPOs, and a domain-joined client with confirmed policy application.
 
 The most valuable outcome of this step wasn't the GPOs applying cleanly. It was hitting two genuine, common real-world AD issues (default computer container placement, and `gpresult` elevation/scope behavior) and working through them methodically rather than assuming something was broken.
 
