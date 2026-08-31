@@ -1,11 +1,11 @@
 # Domain Controller Setup — KCorp-DC01
 
 **Date:** Late August 2026
-**Phase:** Phase 1 — On-Prem AD Foundation
+**Stage:** Stage 2 - Active Directory
 **Category:** Active Directory
 
 ## Goal
-Stand up the first on-premises domain controller for KCorp, establishing the `kcorp.local` domain as the foundation for on-prem AD administration. OUs, users, groups, and GPOs in later steps, and eventually hybrid sync to the existing Entra tenant in Phase 2.
+Stand up the first on-premises domain controller for KCorp, establishing the `kcorp.local` domain as the foundation for on-prem AD administration. OUs, users, groups, and GPOs in later steps, and eventually hybrid sync to the existing Entra tenant later on.
 
 ## What I Configured
 - Created a new VM in Hyper-V: **KCorp-DC01**, Generation 2, 4096 MB startup memory, 120GB dynamically expanding virtual hard disk, connected to **Default Switch** for network access.
