@@ -1,7 +1,7 @@
 # User Provisioning — 25 KCorp Employees
 
 **Date:** Late August 2026 (retroactive entry, written after the fact)
-**Phase:** Phase 0 — Accounts & Environment Setup
+**Stage:** Stage 1 - Entra ID Setup
 **Category:** Entra ID
 
 ## Goal
@@ -18,7 +18,7 @@ Populate the KCorp tenant with a realistic set of fictional employees across dep
 ## Why This Way
 Did the first 6 manually to actually learn the portal's user-creation flow and fields before automating. I didn't want to jump straight to bulk import without understanding what it was doing under the hood. Switched to CSV bulk import for the remaining 19 because manually clicking through 19 more users has no additional learning value, and bulk import is itself a skill worth having reps on (it's a realistic enterprise onboarding pattern, especially for JML/provisioning scenarios later).
 
-Job titles were deliberately varied within each department (e.g., not every IT person is "IT Support Specialist") rather than reusing one title per department, specifically so that dynamic group rules (e.g., "job title contains Manager") have something meaningful to filter on later in Phase 5.
+Job titles were deliberately varied within each department (e.g., not every IT person is "IT Support Specialist") rather than reusing one title per department, specifically so that dynamic group rules (e.g., "job title contains Manager") have something meaningful to filter on later in Stage 6.
 
 Contractor-style accounts were included on purpose to have a non-standard account type available for future Conditional Access/access policy scenarios (e.g. tighter policies for contractors than for full-time employees).
 
@@ -26,7 +26,7 @@ Contractor-style accounts were included on purpose to have a non-standard accoun
 Confirmed all 25 users appear in the Entra Users blade with correct department and job title fields populated. Spot-checked a few of the bulk-imported accounts to confirm the CSV fields mapped correctly (name, department, title) and that Account enabled was set as expected.
 
 ## Result
-Appears to be working. 25 users live in the tenant, correctly split across 5 departments with title variety. At this stage, no security groups, dynamic groups, or external/guest users existed yet. That work was intentionally sequenced after user provisioning, still within Phase 0. See `03-groups-and-guest-access.md` for that work, completed before moving into Phase 1.
+Appears to be working. 25 users live in the tenant, correctly split across 5 departments with title variety. At this stage, no security groups, dynamic groups, or external/guest users existed yet. That work was intentionally sequenced after user provisioning, later in this same stage. See `03-groups-and-guest-access.md` for that work, completed before moving into the Active Directory stage.
 
 ## Screenshots
 ![Entra Users blade showing all 25 users with department and title columns](../Screenshots/01-users-full-roster.png)
