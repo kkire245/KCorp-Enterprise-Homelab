@@ -13,7 +13,7 @@ Populate the KCorp tenant with a realistic set of fictional employees across dep
 - **Remaining 19 created via Entra's native Bulk Create (CSV import)** feature (Users → Bulk operations → Bulk create), using the provided template with columns: Name, User name, Initial password, Account enabled, First name, Last name, Job title, Department, Usage location.
 - All bulk-created accounts used a placeholder password (`TempPass!2025`) and Account enabled = true.
 - Final department breakdown: IT (Priya Nair, Marcus Bell, Aisha Rahman, Bruno Alves), HR (Grace Liu, Daniel Osei, Renee Castillo), Finance (Kevin Park, Sofia Moretti, Omar Haddad, Natalie Brooks), Sales (Jordan Ellis, Camille Fontaine, Tyrell Jackson, Leah Whitfield, Diana Reyes), Operations (Hassan Ali, Wendy Choi, Felix Novak).
-- Two accounts were deliberately created as contractor-style accounts (Bruno Alves — IT, Diana Reyes — Sales) rather than standard employee accounts.
+- Two accounts were deliberately created as contractor-style accounts (Bruno Alves: IT, Diana Reyes: Sales) rather than standard employee accounts.
 
 ## Why This Way
 Did the first 6 manually to actually learn the portal's user-creation flow and fields before automating. I didn't want to jump straight to bulk import without understanding what it was doing under the hood. Switched to CSV bulk import for the remaining 19 because manually clicking through 19 more users has no additional learning value, and bulk import is itself a skill worth having reps on (it's a realistic enterprise onboarding pattern, especially for JML/provisioning scenarios later).
