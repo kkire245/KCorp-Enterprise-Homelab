@@ -34,15 +34,15 @@ A running list of major milestones, updated as phases complete.
 | Aug 2026 | Hyper-V enabled |
 | Aug 2026 | Windows Server 2025 evaluation ISO downloaded |
 | Aug 2026 | Security groups created (5 assigned + 1 dynamic), guest user invited |
-| Aug 2026 | **Phase 0 complete** |
+| Aug 2026 | **Stage 1 Complete - Entra ID Setup** |
 | Aug 2026 | KCorp-DC01 built, promoted to domain controller (kcorp.local) |
 | Aug 2026 | OU structure, AD users, and nested security groups created |
 | Aug 2026 | 3 GPOs created and linked; client VM joined to domain and confirmed policy application |
-| Aug 2026 | **Phase 1 complete** |
+| Aug 2026 | **Stage 2 Complete - Active Directory** |
 | Aug 2026 | KCorp-SYNC01 built, domain-joined, Microsoft Entra Connect installed |
 | Aug 2026 | On-prem AD synced to Entra via Password Hash Synchronization, scoped to KCorp Users OU |
 | Aug 2026 | Sync verified via three tests: new user, attribute change, excluded OU |
-| Aug 2026 | **Phase 2 complete — Entra ID, Active Directory, and Hybrid Identity foundations all in place** |
+| Aug 2026 | **Stage 3 Complete - Hybrid Identity (Entra ID, Active Directory, and Hybrid Identity foundations all in place)** |
 
 ## How Entries Are Documented
 Every meaningful configuration gets its own file in the relevant folder, using the template in `CONFIG-TEMPLATE.md`: what I wanted to accomplish → what I configured → why → how I tested it → result.
