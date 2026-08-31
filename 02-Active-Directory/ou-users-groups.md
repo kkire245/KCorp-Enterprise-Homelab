@@ -15,8 +15,8 @@ Populate the newly promoted `kcorp.local` domain with an organizational structur
   - **KCorp-ServiceAccounts**
 - Created AD users manually (via ADUC → New → User) inside the department sub-OUs, 2 users per department across all six departments (12 users total), to demonstrate manual on-prem provisioning without needing to duplicate the full 25-user Entra roster.
 - Created two security groups (Global scope, Security type):
-  - **KCorp-AD-IT-Staff** — populated with the IT department's users specifically
-  - **KCorp-AD-All-Managers** — populated by nesting **KCorp-AD-IT-Staff** inside it as a member, rather than adding individual users directly
+  - **KCorp-AD-IT-Staff**: Populated with the IT department's users specifically
+  - **KCorp-AD-All-Managers**: Populated by nesting **KCorp-AD-IT-Staff** inside it as a member, rather than adding individual users directly
 
 ## Why This Way
 Used the fuller OU structure (department sub-OUs plus separate Computers/Admins/ServiceAccounts containers) rather than a single flat OU, since purpose-built OUs are both more realistic for a real enterprise and a better demonstration of deliberate AD design. `KCorp-Admins` and `KCorp-ServiceAccounts` being separated out supports more targeted GPOs and delegation later, rather than lumping every object type together.
