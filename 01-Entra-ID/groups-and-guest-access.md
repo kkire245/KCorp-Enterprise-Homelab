@@ -9,7 +9,7 @@ Close out Phase 0 by adding group structure and an external identity to the tena
 
 ## What I Configured
 - Created assigned security groups mirroring departments (KCorp-IT, KCorp-HR, KCorp-Finance, KCorp-Sales, KCorp-Operations), with matching users added to each.
-- Created one **dynamic group** using a rule based on job title, targeting users with "Manager" in their title (e.g., Renee Castillo - HR Manager, Omar Haddad - Finance Manager, Tyrell Jackson - Sales Manager, Wendy Choi - Operations Manager). This pulls members automatically across departments rather than being manually assigned.
+- Created one **dynamic group** using a rule based on job title, targeting users with "Manager" in their title (e.g., Renee Castillo: HR Manager, Omar Haddad: Finance Manager, Tyrell Jackson: Sales Manager, Wendy Choi: Operations Manager). This pulls members automatically across departments rather than being manually assigned.
 - Invited one **external/guest user** via Users → Invite external user. Status is "Invitation pending" until accepted.
 
 ## Why This Way
@@ -21,7 +21,7 @@ The guest invite is a small step now but sets up future work, external users are
 Confirmed each assigned group shows the correct department members. For the dynamic group, waited for membership processing to complete and confirmed it auto-populated with the expected manager-titled users across multiple departments, not just one.
 
 ## Result
-Working. 6 groups total (5 assigned + 1 dynamic), the dynamic group correctly picked up managers across departments without manual assignment. Guest invite sent and was accepted.
+Working. 6 groups total (5 assigned + 1 dynamic). The dynamic group correctly picked up managers across departments without manual assignment. Guest invite sent and was accepted.
 
 With this, **Stage 1 (Entra ID Setup) is fully complete**: tenant live and populated, hypervisor installed, Windows Server 2025 eval ISO downloaded, groups (including dynamic) created, guest user invited.
 
