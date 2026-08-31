@@ -13,7 +13,7 @@ Get a live, populated Entra ID tenant with Entra ID P2 licensing (needed later f
 - Pivoted to an Azure free account instead, which auto-creates an Entra tenant on signup.
 - Renamed the tenant from "Default Directory" to **KCorp**.
 - Confirmed primary tenant domain: `Erikdo122gmail.onmicrosoft.com`.
-- Upgraded the tenant from Entra ID Free to a **Microsoft Entra ID P2 trial** (100 licenses, 1-month term, $0.00 — payment method required only for identity verification, not charged). Confirmed active on the Entra dashboard.
+- Upgraded the tenant from Entra ID Free to a **Microsoft Entra ID P2 trial** (100 licenses, 1-month term, $0.00. The payment method is required only for identity verification and will not be charged. Confirmed active on the Entra dashboard.
 
 ## Why This Way
 The Dev Program route is the more commonly recommended path because it comes pre-licensed and pre-populated, but it's gated by an eligibility check that isn't well documented and apparently affects a meaningful number of applicants. Rather than spending more time troubleshooting an opaque eligibility system, the Azure free account route is more reliable, is 100% within my control, and gets to the same end state (a P2-licensed tenant) with an extra manual upgrade step.
